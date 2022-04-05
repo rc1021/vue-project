@@ -1,0 +1,11 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  web:
+    build: .
+    image: vue-project:1.0
+    ports:
+      - "80:80"
+    volumes:
+      - logvolume01:/var/log
+volumes:
+  logvolume01: {}
